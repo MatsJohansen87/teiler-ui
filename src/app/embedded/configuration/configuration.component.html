@@ -21,7 +21,8 @@
             <div [formGroup]="variableValueFormMap.get(configVariable.variable) ?? defaultValueFormGroup">
               <mat-form-field class="config-full-width" appearance="outline">
                 <mat-label>{{configVariable.variable}}</mat-label>
-                <textarea matInput formControlName="configValue">{{configVariable.value}}</textarea>
+                <input matInput formControlName="configValue" value="configCariable.value">
+                <!-- <textarea matInput formControlName="configValue">{{configVariable.value}}</textarea> -->
                 <mat-icon matSuffix *ngIf="configVariable.variableComment.length!=0"
                           title="{{configVariable.variableComment.concat('\n')}}">info
                 </mat-icon>
