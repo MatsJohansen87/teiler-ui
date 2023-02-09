@@ -6,22 +6,17 @@
 .teiler-box-icon i {
   font-size: 45px;
   color: black;
-  margin-right: 16px;
 }
 
 .teiler-box-image img {
   width: 100%;
 }
 
-.teiler-box-image {
-  margin: 5% 20% 5% 0;
-}
-
 .teiler-box {
-  background-color: #02d9e4;
   width: 300px;
   margin: 0 8px 16px;
   height: 120px;
+  box-shadow: none;
 }
 
 .teiler-box.mat-card._mat-animation-noopable {
@@ -34,7 +29,7 @@
 }
 
 .teiler-box.highlight-card {
-  background-color: #1976d2;
+  /* background-color: #1976d2; */
   color: white;
   font-weight: 600;
   border: none;
@@ -46,11 +41,39 @@
 .teiler-box.card.highlight-card span {
   margin-left: 60px;
 }
+ 
+.mat-card-avatar {
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.teiler-box-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .mat-card-footer {
   position: absolute;
-  bottom: 32px;
-  right: 32px;
+  bottom: 11px;
+  right: 11px;
+  background: white;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% 0 0 0;
+  transition: all 0.3s ease-in-out !important;
+}
+
+
+.teiler-box:hover .mat-card-footer{
+  transform: translateY(-5px);
+  box-shadow: -4px -1px 13px rgba(0, 0, 0, 0.35)
 }
 
 .bi-check-circle {

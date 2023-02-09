@@ -57,6 +57,7 @@ export class TeilerService {
     this.httpClient.get<TeilerApp[]>(this.getTeilerCoreAppsUrl()).subscribe(teilerApps => {
       this.allTeilerApps = [];
       embeddedTeilerApps.forEach(teilerApp => this.allTeilerApps.push(teilerApp));
+      console.log(this.allTeilerApps)
       this.addTeilerCoreApps(teilerApps);
       this.sortTeilerApps();
       this.filterTeilerApps()
