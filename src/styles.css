@@ -9,3 +9,14 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+/* form-fields */
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: var(--color-blue);
+}
+
+.mat-focused .mat-form-field-outline,.mat-focused mat-label {
+    color: var(--color-green) !important;
+}
