@@ -7,8 +7,15 @@
     --color-green: #06D6A0;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 
 /* form-fields */
@@ -17,6 +24,24 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     color: var(--color-blue);
 }
 
-.mat-focused .mat-form-field-outline,.mat-focused mat-label {
+.mat-focused .mat-form-field-outline,
+.mat-focused mat-label {
     color: var(--color-green) !important;
+}
+
+
+/* headings */
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.00938em;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.00938em;
 }
